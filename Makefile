@@ -1,4 +1,4 @@
-PROJECTNAME := "devblaze"
+PROJECTNAME := "notcli"
 
 define HELP
 

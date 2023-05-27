@@ -42,3 +42,4 @@ This will display a list of commands along with a brief description of what each
 |------------|-----------------------------------------------------------------|
 | `loadvars` | Loads variables from a file and exports them to the environment |
 | `help`     | Displays a list of available commands and their descriptions    |
+| `version`  | Displays the version of `notcli`                                |

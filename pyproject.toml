@@ -4,18 +4,34 @@ build-backend = "hatchling.build"
 
 [project]
 name = "notcli"
-version = "0.0.1"
 description = "A CLI application to load variables from a file and export them to the environment, with a Textual-based UI for interactive usage."
 dependencies = ["textual[dev] ==0.26.0"]
-
-[project.scripts]
-notcli = "src.notcli.app:main"
-
-[project.urls]
-Homepage = "https://github.com/godd0t/devblaze"
+readme = "README.md"
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: User Interfaces",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Version Control :: Git",
+    "Topic :: Utilities",
+    "Topic :: Text Processing",
+]
+dynamic = ["version"]
 
 [project.license]
 file = "LICENSE"
+
+[project.urls]
+Homepage = "https://github.com/godd0t/notcli"
+
+[project.scripts]
+notcli = "src.notcli.app:main"
 
 [project.optional-dependencies]
 dev = [
@@ -23,7 +39,18 @@ dev = [
     "black ==23.3.0",
     "ruff ==0.0.270",
     "coverage[toml] ==7.2.6",
+    "build ==0.10.0",
+    "twine ==4.0.2",
 ]
+
+[tool.hatchling]
+allow-direct-references = true
+
+[tool.hatch.version]
+path = "src/notcli/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
 
 [tool.black]
 line-length = 88
@@ -61,5 +88,5 @@ target-version = "py311"
 max-complexity = 10
 
 [tool.ruff.isort]
-force-to-top = ["devblaze"]
-known-first-party = ["devblaze"]
+force-to-top = ["notcli"]
+known-first-party = ["notcli"]
