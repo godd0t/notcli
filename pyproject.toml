@@ -31,7 +31,7 @@ text = "MIT"
 Homepage = "https://github.com/godd0t/notcli"
 
 [project.scripts]
-notcli = "src.notcli.app:main"
+notcli = "src.notcli.main:main"
 
 [project.optional-dependencies]
 dev = [
