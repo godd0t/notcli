@@ -47,8 +47,8 @@ This will display a list of commands along with a brief description of what each
 
 ## Contributing
 
-Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contribute to this project.
+Contributions are welcome! Please read [CONTRIBUTING.md](https://github.com/godd0t/notcli/blob/main/CONTRIBUTING.md) for details on how to contribute to this project.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/godd0t/notcli/blob/main/LICENSE) file for details.
