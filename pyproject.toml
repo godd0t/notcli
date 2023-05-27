@@ -23,7 +23,9 @@ classifiers = [
     "Topic :: Text Processing",
 ]
 dynamic = ["version"]
-license = "MIT"
+
+[project.license]
+text = "MIT License"
 
 [project.urls]
 Homepage = "https://github.com/godd0t/notcli"
