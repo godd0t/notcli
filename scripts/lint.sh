@@ -2,5 +2,5 @@
 
 PACKAGE_PATH="src"
 
-ruff "$PACKAGE_PATH"
-black "$PACKAGE_PATH" --check
+ruff "$PACKAGE_PATH" tests
+black "$PACKAGE_PATH" tests --check

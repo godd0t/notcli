@@ -148,22 +148,24 @@ class LoadVars(App):
 
     def export_variables(self) -> None:
         self.add_note("Exporting variables to environment")
-        commands_to_run = []
-        for var, value in self.variables.items():
-            command = f"export {var}={value}"
-            commands_to_run.append(command)
-        self.add_note("Running commands")
-        try:
-            tty = self.get_tty()
-            command_str = self.build_command(commands_to_run) + "; clear"
-            sleep_and_run = (
-                f"sleep 0.3 && {TTY_ECHO_PATH}/ttyecho -n {tty} '{command_str}'"
-            )
-            subprocess.Popen(sleep_and_run, shell=True)
-        except Exception as e:
-            self.add_note(f"Failed to export variables: {str(e)}")
+        commands_to_run = [
+            f"export {var}={value}" for var, value in self.variables.items()
+        ]
+        if commands_to_run:
+            self.add_note("Running commands")
+            try:
+                tty = self.get_tty()
+                command_str = self.build_command(commands_to_run) + "; clear"
+                sleep_and_run = (
+                    f"sleep 0.3 && {TTY_ECHO_PATH}/ttyecho -n {tty} '{command_str}'"
+                )
+                subprocess.Popen(sleep_and_run, shell=True)
+            except Exception as e:
+                self.add_note(f"Failed to export variables: {str(e)}")
+            else:
+                self.app.exit()
         else:
-            self.app.exit()
+            subprocess.Popen("clear", shell=True)
 
 
 app = LoadVars()
