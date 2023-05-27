@@ -1,4 +1,4 @@
-# notcli - An Interactive TUI Application
+# NotCLI - An Interactive TUI Application
 
 `notcli` is a Textual User Interface (TUI) application designed to streamline your command line tasks with easy-to-use shortcuts. The application leverages the power of Python's `argparse` and `rich` libraries to provide an intuitive interface, and the `textual` library for an interactive user experience.
 
@@ -43,3 +43,12 @@ This will display a list of commands along with a brief description of what each
 | `loadvars` | Loads variables from a file and exports them to the environment |
 | `help`     | Displays a list of available commands and their descriptions    |
 | `version`  | Displays the version of `notcli`                                |
+
+
+## Contributing
+
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contribute to this project.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

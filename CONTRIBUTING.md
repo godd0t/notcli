@@ -1,19 +1,19 @@
-# Contributing to DevBlaze
+# Contributing to NotCLI
 
-First off, thank you for considering contributing to DevBlaze!
+First off, thank you for considering contributing to NotCLI!
 
 ## How Can I Contribute?
 
 ### Reporting Bugs
 
-This section guides you through submitting a bug report for DevBlaze. Following these guidelines helps maintainers understand your report, reproduce the behavior and find related reports.
+This section guides you through submitting a bug report for NotCLI. Following these guidelines helps maintainers understand your report, reproduce the behavior and find related reports.
 
 - Before creating bug reports, please check [this list](https://github.com/godd0t/notcli/issues) to see if the issue has already been reported. If it has, add a comment to the existing issue instead of opening a new one.
 - When you are creating a bug report, please include as many details as possible. Fill out [the required template](https://github.com/godd0t/notcli/issues/new?assignees=&labels=bug&template=bug_report.md&title=), the information it asks for helps us resolve issues faster.
 
 ### Suggesting Enhancements
 
-This section guides you through submitting an enhancement suggestion for DevBlaze, including completely new features and minor improvements to existing functionality. 
+This section guides you through submitting an enhancement suggestion for NotCLI, including completely new features and minor improvements to existing functionality. 
 
 - When you are creating an enhancement suggestion, please include as many details as possible. Fill in [the template](https://github.com/godd0t/notcli/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=), including the steps that you imagine you would take if the feature you're requesting existed.
 
@@ -21,10 +21,10 @@ This section guides you through submitting an enhancement suggestion for DevBlaz
 
 The process described here has several goals:
 
-- Maintain DevBlaze's quality
+- Maintain NotCLI's quality
 - Fix problems that are important to users
-- Engage the community in working toward the best possible DevBlaze
-- Enable a sustainable system for DevBlaze's maintainers to review contributions
+- Engage the community in working toward the best possible NotCLI
+- Enable a sustainable system for NotCLI's maintainers to review contributions
 
 Please follow these steps to have your contribution considered by the maintainers:
 
